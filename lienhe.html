@@ -75,18 +75,18 @@
                      </tr>
                      <tr>
                         <td>
-                           <form>
+                           <form name="contact_form">
                               <div class="form-group">
                                  <h4>Form liên hệ</h4>
                                  <label for="hoten">Họ và tên <span class="text-danger fw-bold">*</span></label>
-                                 <input type="text" id="hoten" class="form-control" placeholder="Họ và tên" required>
+                                 <input type="text" id="hoten" class="form-control" placeholder="Họ và tên" name="fullname" required>
                                  <label for="email">Email <span class="text-danger fw-bold">*</span></label>
-                                 <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                 <input type="email" id="email" class="form-control" placeholder="Email" name="email" required>
                                  <label for="sdt">Số điện thoại <span class="text-danger fw-bold">*</span></label>
-                                 <input type="number" id="sdt" class="form-control" placeholder="Số điện thoại" required>
+                                 <input type="number" id="sdt" class="form-control" placeholder="Số điện thoại" name="phone_number" required>
                                  <label for="textarea">Nội dung <span class="text-danger fw-bold">*</span></label>
-                                 <textarea id="textarea" class="form-control" rows="3" placeholder="Nội dung" required></textarea><br>
-                                 <button type="submit" class="btn btn-primary">Gửi</button>
+                                 <textarea id="textarea" class="form-control" rows="3" placeholder="Nội dung" name="context" required></textarea><br>
+                                 <button type="submit" class="btn btn-primary" onclick="notify_3()">Gửi</button>
                               </div>
                            </form>
                         </td>
@@ -227,6 +227,7 @@
       <!-- Copyright -->
    </footer>
    <!-- Footer -->
+      <script src="javascript.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
